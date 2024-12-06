@@ -1,0 +1,116 @@
+/* General Navbar Styles */
+.navbar {
+    background-color: #1a1a2e; /* Deep blue color */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Section */
+  .navbar-logo a {
+    color: #00d4ff; /* Bright blue */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-logo a:hover {
+    color: #ffffff; /* White on hover */
+  }
+  
+  /* Navigation Links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .navbar-links li a:hover,
+  .navbar-links li a.active {
+    background-color: #00d4ff; /* Highlight on hover */
+    color: #1a1a2e; /* Contrast with blue background */
+  }
+  
+  /* Search Bar */
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar-search input {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+   
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-search input:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 5px #00d4ff;
+  }
+
+  .navbar-search button {
+    background-color: #00d4ff;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-search button:hover {
+    background-color: #008bb5; /* Slightly darker blue */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-wrap: wrap;
+    }
+
+    .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .navbar-search {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .navbar-search input {
+      width: 80%;
+    }
+  }
+ 

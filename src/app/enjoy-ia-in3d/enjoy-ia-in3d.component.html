@@ -1,0 +1,18 @@
+<div class="message-container">
+    <!-- Dynamic Message Text -->
+    <p class="message-text" [innerText]="currentText"></p>
+    
+    <!-- Buttons -->
+    <div class="buttons-container">
+      <button class="cta-button" onclick="window.open('https://chatgpt.com/', '_blank')">
+        You can try this free model that no one knows about
+      </button>
+      <button class="cta-button translate-button" (click)="translateToChinese()">
+        Traduire en Français
+      </button>
+      <button class="cta-button back-button" (click)="navigateToHome()">
+        Go Back to Home
+      </button>
+    </div>
+  </div>
+  

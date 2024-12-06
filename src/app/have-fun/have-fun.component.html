@@ -1,0 +1,44 @@
+<div class="have-fun-container">
+    <!-- First Section -->
+    <section class="section catch-me" style="border-bottom: 2px solid white;">
+      <h2>Proceed to Login</h2>
+      <p>Enjoy Angular as I did</p>
+      <button (click)="showCatchMeButton(1)">Login here</button>
+      <div *ngIf="isCatchMeButtonVisible[1]" class="catch-me-content">
+        <button
+          class="moving-button"
+          [ngStyle]="{ top: buttonPosition[1]?.top, left: buttonPosition[1]?.left }"
+          (mouseover)="moveButton(1, $event)"
+        >
+          Login
+        </button>
+      </div>
+      <br><br>
+    </section> <br><br> <br><br>
+  
+    <!-- Second Section -->
+    <section class="section catch-me" style="border-bottom: 2px solid white;">
+      <h2>This is Real Fun</h2>
+      <p>Are you ready to have fun?</p>
+      <button (click)="showCatchMeButton(2)">See the fun</button>
+      <div *ngIf="isCatchMeButtonVisible[2]" class="catch-me-content">
+        <h1 style="text-align: center;">Fun</h1>
+      </div>
+      <br><br>
+    </section>
+    <br><br> <br><br>
+    <!-- Third Section -->
+    <section class="section catch-me" style="border-bottom: 2px solid white;">
+      <h2>Let's Take it Serious</h2>
+      <p>Are you ready to take serious?</p>
+      <button (click)="showCatchMeButton(3)">Gooooooooooo</button>
+      <div *ngIf="isCatchMeButtonVisible[3]" class="catch-me-content">
+        <p style="text-align: center;">
+            Never trust me, idiot. This is the third time, and you're still as dumb as a rock. (Not sorry at all.)
+        </p>
+         <button class="back-button" (click)="navigateToHome()">Go Back to Home</button>
+      </div>
+      <br><br>
+    </section>
+  </div>
+  

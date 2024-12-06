@@ -1,0 +1,53 @@
+/* General Container Styling */
+.message-container {
+    background: linear-gradient(145deg, #282c34, #3a3f47);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    color: #f5f5f5;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Text Styling */
+  .message-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons Container */
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Button Styling */
+  .cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(34, 80, 129);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgb(34, 80, 129);;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  .cta-button:hover {
+    box-shadow: 0 6px 12px rgba(255, 107, 107, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .cta-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.6);
+  }
+  

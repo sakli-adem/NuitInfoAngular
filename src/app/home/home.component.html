@@ -1,0 +1,39 @@
+<div class="scene">
+  <div class="road">
+    <div class="text-overlay">
+      Scroll to see the trash
+    </div>
+    <div class="car" id="car"></div>
+
+    <div class="line left-line-2"></div>
+    <div class="line right-line-2"></div>
+
+    <!-- Current Checkpoint -->
+    <div class="checkpoint" id="checkpoint-current">
+      <button (click)="navigateTo(currentCheckpointRoute)">
+        {{ currentCheckpointLabel }}
+      </button>
+    </div>
+
+    <!-- Next Checkpoint -->
+    <div class="checkpoint" id="checkpoint-next">
+      <button (click)="navigateTo(nextCheckpointRoute)">
+        {{ nextCheckpointLabel }}
+      </button>
+    </div>
+
+    <!-- Explore Checkpoint -->
+    <div class="checkpoint" id="checkpoint-explore">
+      <button (click)="onExploreClick()">
+        {{ exploreCheckpointLabel }}
+      </button>
+    </div>
+
+    <!-- Fifth Checkpoint -->
+    <div class="checkpoint" id="checkpoint-fifth">
+      <button (click)="navigateTo(fifthCheckpointRoute)">
+        {{ fifthCheckpointLabel }}
+      </button>
+    </div>
+  </div>
+</div>

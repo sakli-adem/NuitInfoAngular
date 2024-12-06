@@ -1,0 +1,21 @@
+<div class="game-container">
+    <div class="board">
+      <div class="row" *ngFor="let row of [0, 1, 2]">
+        <div class="cell" *ngFor="let col of [0, 1, 2]" (click)="makeMove(row * 3 + col)">
+          {{ board[row * 3 + col] }}
+        </div>
+      </div>
+    </div>
+    <div *ngIf="winner">
+      <p>{{ displayedWinner }} wins!  (huhhh ??? everything is reversed here)</p>
+      <button (click)="resetGame()">Play Again</button>
+    </div>
+    <div *ngIf="isDraw()">
+      <p>It's a draw! (huhhh ???  everything is reversed here)</p>
+      <button (click)="resetGame()">Play Again</button>
+    </div>
+
+    <br><br><br><br><br>
+      <button class="go-home-button" (click)="navigateToHome()">Go Home</button>
+  </div>
+  
